@@ -1,0 +1,510 @@
+/* ============================================================================
+   Bento-сетка главной страницы — концепция «Новая бумага».
+   12 колонок: 3 + 9 в первом ряду, 5 + 4 + 3 в следующих.
+   ========================================================================== */
+
+.bento {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: minmax(358px, auto) minmax(212px, auto) minmax(212px, auto);
+  gap: var(--gap);
+  margin-top: 22px;
+}
+
+/* ------------------------------------------------- 1. Боковая пудровая карточка */
+
+.bento__side {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  position: relative;
+  display: block;
+  min-height: 358px;
+  padding: 28px;
+  background: var(--card-pudra);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.bento__side:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 37, 32, 0.08);
+}
+
+.side__eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(72, 56, 44, 0.66);
+  max-width: 100%;
+}
+
+.side__monogram {
+  position: absolute;
+  left: 42px;
+  bottom: -52px;
+  font-family: var(--font-serif);
+  font-size: 252px;
+  line-height: 0.72;
+  color: var(--terracotta);
+  user-select: none;
+  pointer-events: none;
+}
+
+.side__chip {
+  position: absolute;
+  left: 26px;
+  bottom: 24px;
+  z-index: 2;
+  background: var(--card);
+  border-radius: var(--radius-sm);
+  padding: 11px 15px;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  box-shadow: 0 6px 18px rgba(37, 37, 32, 0.07);
+}
+
+.side__chip span {
+  display: block;
+}
+
+.side__chip span + span {
+  color: var(--muted);
+}
+
+/* --------------------------------------------------------- 2. Основная карточка */
+
+.bento__hero {
+  grid-column: 4 / span 9;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 334px;
+  gap: 36px;
+  align-items: center;
+  padding: 30px 30px 30px 34px;
+  background: var(--card);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+}
+
+.hero__text {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'eyebrow eyebrow'
+    'title title'
+    'lead lead'
+    'chips cta';
+  align-content: center;
+}
+
+.hero__eyebrow {
+  grid-area: eyebrow;
+  margin-bottom: 16px;
+}
+
+.hero__title {
+  grid-area: title;
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 4.1vw, 62px);
+  line-height: 0.98;
+  letter-spacing: -0.022em;
+}
+
+.hero__lead {
+  grid-area: lead;
+  margin-top: 20px;
+  max-width: 500px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.hero__chips {
+  grid-area: chips;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.hero__chip {
+  padding: 9px 16px;
+  background: var(--card-warm);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.hero__cta {
+  grid-area: cta;
+  align-self: center;
+  margin-top: 24px;
+}
+
+.hero__portrait {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 334 / 327;
+  background: var(--card-pudra);
+}
+
+.hero__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+/* --------------------------------------------------- 3. Терракотовая карточка Hermes */
+
+.bento__hermes {
+  grid-column: 1 / span 5;
+  grid-row: 2 / span 2;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 30px;
+  background: var(--terracotta);
+  color: #fff;
+  border-radius: var(--radius);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
+    background-color var(--dur) var(--ease);
+}
+
+.bento__hermes:hover {
+  transform: translateY(-2px);
+  background: var(--terracotta-deep);
+  box-shadow: 0 14px 30px rgba(199, 101, 74, 0.24);
+}
+
+.bento__hermes .eyebrow {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.hermes__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hermes__main {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hermes__title {
+  font-family: var(--font-serif);
+  font-size: clamp(42px, 4.6vw, 60px);
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.hermes__sup {
+  font-size: 0.4em;
+  vertical-align: super;
+  margin-left: 4px;
+  letter-spacing: 0;
+}
+
+.hermes__desc {
+  margin-top: 16px;
+  max-width: 420px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hermes__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 2px;
+  align-self: flex-start;
+  transition: border-color var(--dur) var(--ease), gap var(--dur) var(--ease);
+}
+
+.hermes__link:hover {
+  border-color: #fff;
+  gap: 12px;
+}
+
+/* ------------------------------------------------ 4–7. Внутренние карточки Bento */
+
+.bento__card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 30px;
+  border-radius: var(--radius);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.bento__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 37, 32, 0.07);
+}
+
+.bento__skills {
+  grid-column: 6 / span 4;
+  grid-row: 2;
+  background: var(--card-skills);
+}
+
+.bento__approach {
+  grid-column: 10 / span 3;
+  grid-row: 2;
+  background: var(--card-warm);
+  border: 1px solid var(--line-soft);
+}
+
+.bento__research {
+  grid-column: 6 / span 4;
+  grid-row: 3;
+  background: var(--card-research);
+}
+
+.bento__resume {
+  grid-column: 10 / span 3;
+  grid-row: 3;
+  background: var(--card-resume);
+  color: var(--on-dark);
+}
+
+.bento__resume .eyebrow {
+  color: rgba(239, 235, 226, 0.62);
+}
+
+.bento__card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.bento__title {
+  margin-top: 18px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.bento__desc {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.bento__resume .bento__desc {
+  color: rgba(239, 235, 226, 0.62);
+}
+
+.bento__tags {
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.bento__steps {
+  margin-top: auto;
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.bento__steps span {
+  color: var(--muted-soft);
+  font-weight: 400;
+}
+
+.bento__resume .bento__title {
+  margin-top: 22px;
+}
+
+/* ---------------------------------------------- Блок под Bento-сеткой */
+
+.below {
+  display: grid;
+  grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr);
+  gap: var(--gap);
+  margin-top: var(--gap);
+}
+
+.below__card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 32px;
+  border-radius: var(--radius);
+}
+
+.below__journal {
+  background: var(--card-warm);
+  border: 1px solid var(--line-soft);
+}
+
+.below__all {
+  background: var(--card-pudra);
+}
+
+.below__title {
+  margin-top: 14px;
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.08;
+  letter-spacing: -0.018em;
+  max-width: 520px;
+}
+
+.below__desc {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 520px;
+}
+
+.below__link {
+  margin-top: 22px;
+  align-self: flex-start;
+}
+
+.below__all .below__title {
+  font-size: 26px;
+}
+
+/* --------------------------------------------------------------- Адаптив */
+
+@media (max-width: 1240px) {
+  .bento__hero {
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bento {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  .bento__side {
+    grid-column: span 2;
+    grid-row: auto;
+    min-height: 300px;
+  }
+
+  .bento__hero {
+    grid-column: span 4;
+    grid-row: auto;
+  }
+
+  .bento__hermes {
+    grid-column: span 6;
+    grid-row: auto;
+    min-height: 300px;
+  }
+
+  .bento__skills,
+  .bento__approach,
+  .bento__research,
+  .bento__resume {
+    grid-column: span 3;
+    grid-row: auto;
+  }
+
+  .bento__skills,
+  .bento__research {
+    grid-column: span 3;
+  }
+
+  .below {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .bento {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bento__side,
+  .bento__hero,
+  .bento__hermes,
+  .bento__skills,
+  .bento__approach,
+  .bento__research,
+  .bento__resume {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .bento__side {
+    min-height: 232px;
+  }
+
+  /* На узком экране буква уходит вправо, чтобы её не закрывал чип слева. */
+  .side__monogram {
+    font-size: 142px;
+    left: auto;
+    right: 14px;
+    bottom: -20px;
+  }
+
+  .bento__hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 26px 24px 24px;
+  }
+
+  .hero__text {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .hero__portrait {
+    max-height: 340px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .bento__hermes {
+    min-height: 0;
+  }
+
+  .hermes__main {
+    margin: 32px 0 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .hero__lead {
+    font-size: 14.5px;
+  }
+
+  .bento__card,
+  .bento__hermes,
+  .below__card {
+    padding: 24px 22px;
+  }
+
+  .bento__title {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "evgeniy-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Персональное IT-портфолио Евгения Наконечного — «Новая бумага» / Bento",
+  "scripts": {
+    "dev": "next dev -p 4321",
+    "build": "next build && node scripts/prepare-deploy.mjs",
+    "start": "npx --yes serve dist -l 4321",
+    "preview": "npx --yes serve dist -l 4321",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "15.5.29",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "typescript": "5.7.2"
+  }
+}

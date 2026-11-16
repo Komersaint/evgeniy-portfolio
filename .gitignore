@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+dist/
+build/
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Артефакты локальной проверки в браузере
+.playwright-cli/
+output/

@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial still-life product photograph, warm paper aesthetic, horizontal 16:9. On a warm cream-paper backdrop with soft natural side light: three simple objects arranged in a clear left-to-right sequence with generous space between them. Left: a single small matte-white ceramic block, slightly rough unglazed clay. Center: a neat organized mechanism made of smooth ceramic and brushed matte metal parts with precise polished copper connectors. Right: a single clean small output block in pale graphite grey. Exact copper connections between parts, calm and legible. Muted palette: milky cream, warm off-white, graphite grey, matte copper, small terracotta accent. Premium quiet magazine photography, natural color, soft shadows, no text, no letters, no numbers, no arrows, no UI, no screens, no robots, no neon, no glowing circuits.",
+      "aspect_ratio": "16:9",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "automation-blocks"
+    }
+  ]
+}

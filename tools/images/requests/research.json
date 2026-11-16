@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial still-life photograph, warm paper aesthetic, vertical 4:3. A single transparent glass module on a warm cream-paper surface containing a few polished copper elements suspended inside, with one component clearly unfinished and slightly apart from the rest, an open question implied. Soft natural side light, calm quiet mood, delicate refraction, subtle shadow on paper. Muted palette: milky cream, warm off-white, graphite grey, matte copper, faint terracotta. Premium magazine photography, natural color, no text, no letters, no numbers, no UI, no screens, no robots, no neon, no glowing circuits.",
+      "aspect_ratio": "4:3",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "research-module"
+    }
+  ]
+}

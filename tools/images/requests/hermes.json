@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial still-life product photograph, warm paper aesthetic. Horizontal 16:9 composition on a warm cream-paper backdrop with soft natural side light and generous empty space. On the right side of the frame: a modular arrangement of translucent glass and matte white ceramic plates stacked in precise layers, linked by thin polished copper rods and small copper connectors, suggesting a modular agent architecture without depicting any diagram. The left half of the frame is deliberately empty clean cream backdrop with soft shadow, reserved for text. Muted palette: milky cream, warm off-white, graphite grey, matte copper, terracotta accent. Calm, quiet, premium magazine photography, natural color, subtle matte finish, no text, no letters, no numbers, no UI, no screens, no robots, no neon, no glowing circuits, no holographic elements.",
+      "aspect_ratio": "16:9",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "hermes-modules"
+    }
+  ]
+}

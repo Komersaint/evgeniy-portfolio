@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial still-life photograph, warm paper aesthetic, horizontal 16:9. Three clearly different small physical artifacts from one collection, spaced apart on a cream-paper base, minimal composition: first a small matte ceramic vessel in pale terracotta, second a compact brushed graphite metal cube with a polished copper hinge, third a translucent glass disc on a thin copper stand. They must look like unrelated separate objects, not one product. Soft natural side light, generous air, calm shadows. Muted palette: milky cream, warm off-white, graphite grey, matte copper, terracotta. Premium magazine photography, natural color, no text, no letters, no numbers, no UI, no screens, no robots, no neon.",
+      "aspect_ratio": "16:9",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "all-projects"
+    }
+  ]
+}

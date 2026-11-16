@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial still-life photograph, warm paper aesthetic, horizontal 16:9. Four sequential stages of making one simple physical object from ceramic and matte metal, laid out in a clear left-to-right row on a warm cream-paper backdrop with even spacing: first raw clay and a rough blank form, second a shaped and smoothed form, third a refined matte metal and ceramic assembly with polished copper joints, fourth the finished simple object. Soft natural side light, plenty of air, quiet and orderly. Muted palette: milky cream, warm off-white, graphite grey, matte copper, subtle terracotta. Premium magazine photography, natural color, no text, no labels, no letters, no numbers, no arrows, no UI, no screens, no robots, no neon.",
+      "aspect_ratio": "16:9",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "approach-stages"
+    }
+  ]
+}

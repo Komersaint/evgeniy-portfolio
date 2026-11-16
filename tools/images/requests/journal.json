@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial still-life photograph, warm paper aesthetic, vertical 4:3. An open blank notebook on a warm cream paper desk, pages showing only soft unreadable abstract ink lines with no legible writing, a single precise engineering instrument resting beside it, two small polished copper elements nearby, natural soft side light from a window, calm quiet working atmosphere, subtle matte shadows. Muted palette: milky cream, warm off-white, graphite grey, matte copper. Premium magazine photography, natural color, shallow depth of field, no readable text, no letters, no numbers, no UI, no screens, no robots, no neon.",
+      "aspect_ratio": "4:3",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "journal-notebook"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial portrait photograph of the same man from Picture 1. Keep him completely unchanged: identical face and facial features, identical hairstyle and hairline, identical freckles and natural skin texture, identical calm closed-mouth expression, identical straight-on gaze into the camera, identical blue earbud, identical black jacket and white t-shirt. Change only the background and the framing: replace the entire outdoor street background with a smooth seamless warm cream-paper studio backdrop (approximately #F4F0E9) with a very subtle paper grain and a faint soft shadow behind the shoulders. IMPORTANT FRAMING, follow exactly: a medium close-up portrait framed from the upper chest up, NOT a tight face close-up; the head must occupy only about one third of the frame height; leave generous empty cream space above the head and on both sides; both shoulders visible; the subject centred; straight-on eye-level camera; natural 50mm perspective without wide-angle distortion. Soft diffused studio light from the upper left, warm muted palette, photorealistic, sharp eyes, no text, no props, no extra people, no neon, no vignette.",
+      "reference_images": [
+        {
+          "url": "https://matrix-internal.oss-us-east-1.aliyuncs.com/user_file_upload_tmp%2F2026-11-16%2Fc119e114-f90c-4c9f-93ee-76a1c9e8f625.jpg?x-oss-credential=LTAI5t9dXq2sLrMZ8f1XfiFZ%2F20261116%2Fus-east-1%2Foss%2Faliyun_v4_request&x-oss-date=20261116T202704Z&x-oss-expires=3600&x-oss-signature=5e13cc25b68a6bfc60647f8ea24791513c7a0143ad06713c1833bf49bebf45f7&x-oss-signature-version=OSS4-HMAC-SHA256",
+          "mime_type": "image/jpeg"
+        }
+      ],
+      "aspect_ratio": "1:1",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "portrait-paper"
+    }
+  ]
+}

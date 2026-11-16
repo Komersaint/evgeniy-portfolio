@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Editorial photograph, warm paper aesthetic, vertical 4:3. A tidy real working space on a warm cream desk: a clean closed notebook, a slim laptop closed with its lid facing away so no screen is visible, a few neutral everyday objects, a single small ceramic cup. No people, no visible screens, no readable text on any surface. Soft natural window light from the side, quiet calm atmosphere, subtle matte shadows. Muted palette: milky cream, warm off-white, graphite grey, matte copper, small terracotta accent. Premium magazine photography, natural color, no letters, no numbers, no UI, no robots, no neon.",
+      "aspect_ratio": "4:3",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "about-workspace"
+    }
+  ]
+}
