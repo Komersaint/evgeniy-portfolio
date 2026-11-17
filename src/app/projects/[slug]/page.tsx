@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { notFound } from 'next/navigation';
 import PageShell from '@/components/PageShell';
 import { projectBySlug, projects } from '@/content/projects';

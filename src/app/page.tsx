@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { bentoCards, belowFold, hero, sideCard } from '@/content/home';
 import { portrait } from '@/content/site';
 

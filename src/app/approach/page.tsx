@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import PageShell from '@/components/PageShell';
 import { approachIntro, approachPrinciples, approachSteps } from '@/content/approach';
 
