@@ -36,11 +36,11 @@ export default function ResearchPage() {
         <div className="stack">
           {researchTopics.map((topic) => (
             <section key={topic.id} className="panel">
-              <div className="bento__card-top">
+              <div className="entry-head">
                 <h2 className="panel__title" style={{ marginBottom: 0 }}>
                   {topic.title}
                 </h2>
-                <span className="eyebrow eyebrow--muted">
+                <span className="entry-head__meta">
                   {STATUS_LABEL[topic.status] ?? topic.status}
                 </span>
               </div>

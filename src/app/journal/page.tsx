@@ -31,11 +31,11 @@ export default function JournalPage() {
             <div className="stack">
               {entries.map((entry) => (
                 <article key={entry.id} className="panel">
-                  <div className="bento__card-top">
+                  <div className="entry-head">
                     <h3 className="panel__title" style={{ marginBottom: 0 }}>
                       {entry.title}
                     </h3>
-                    <span className="eyebrow eyebrow--muted">{entry.date}</span>
+                    <span className="entry-head__meta">{entry.date}</span>
                   </div>
 
                   <div className="deflist" style={{ marginTop: 20 }}>
@@ -82,11 +82,11 @@ export default function JournalPage() {
         <div className="stack">
           {journalPlanned.map((topic) => (
             <article key={topic.id} className="panel panel--warm">
-              <div className="bento__card-top">
+              <div className="entry-head">
                 <h3 className="panel__title" style={{ marginBottom: 0 }}>
                   {topic.title}
                 </h3>
-                <span className="eyebrow eyebrow--muted">
+                <span className="entry-head__meta">
                   {topic.group === 'technical' ? 'Техническая' : 'Бизнес'}
                 </span>
               </div>

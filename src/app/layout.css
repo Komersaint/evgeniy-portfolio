@@ -254,6 +254,23 @@
   text-align: right;
 }
 
+/* Заголовок записи: название + дата/статус */
+.entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.entry-head__meta {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 .project-card__title {
   font-size: 22px;
   font-weight: 700;
@@ -566,6 +583,11 @@
     display: none;
   }
 
+  /* Палец должен попадать в ссылку, а не в её буквы */
+  .site-header__link {
+    padding: 9px 0;
+  }
+
   .card-grid,
   .card-grid--3 {
     grid-template-columns: minmax(0, 1fr);
@@ -583,6 +605,36 @@
 
   .page {
     padding-top: 30px;
+  }
+}
+
+@media (max-width: 620px) {
+  /* Подпись и статус больше не делят узкую строку: каждый на своей строке */
+  .project-card__top,
+  .entry-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .project-card__status {
+    text-align: left;
+  }
+
+  .entry-head__meta {
+    white-space: normal;
+  }
+
+  .project-card {
+    padding: 22px 20px 24px;
+  }
+
+  .panel {
+    padding: 22px 20px;
+  }
+
+  .resume__block {
+    padding: 22px 20px;
   }
 }
 
